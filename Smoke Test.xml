@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke TestSuite">
+
+ <test name="Smoke">
+
+<classes>
+
+ <class name="com.nitara.AccountManagement.Login">
+<parameter name="DeviceName" value="Pixel5"></parameter>
+<parameter name="Udid" value="emulator-5554"></parameter>
+<parameter name="SystemPort" value="8205"></parameter>
+<parameter name="URL" value="http://0.0.0.0:5003/wd/hub"></parameter>
+ </class>
+
+    </classes>
+
+  </test> <!--Test -->
+
+
+</suite> <!-- Suite -->

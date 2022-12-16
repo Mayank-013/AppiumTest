@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+<parameter name="DeviceName" value="Pixel5"></parameter>
+<parameter name="Udid" value="emulator-5554"></parameter>
+<parameter name="SystemPort" value="8204"></parameter>
+  <test  name="Test">
+    <classes>
+    <class name="com.nitara.AccountManagement.SignUp"/>
+      <class name="com.nitara.HealthManagement.DeleteVaccination"/>
+      <class name="com.nitara.HealthManagement.AddVaccination"/>
+      <class name="com.nitara.HealthManagement.EditVaccination"/>
+      <class name="com.nitara.HealthManagement.ViewVaccination"/>
+      <class name="com.nitara.HealthManagement.DeleteDeworming"/>
+      <class name="com.nitara.HealthManagement.AddDeworming"/>
+      <class name="com.nitara.HealthManagement.EditDeworming"/>
+      <class name="com.nitara.HealthManagement.ViewDeworming"/>
+      <class name="com.nitara.HealthManagement.AddTreatment"/>
+      <class name="com.nitara.HealthManagement.ViewTreatment"/>
+       <class name="com.nitara.BreedingManagement.DeletePD"/>
+      <class name="com.nitara.BreedingManagement.DeleteHeat"/>
+       <class name="com.nitara.BreedingManagement.DeleteDryPeriod"/>
+       <class name="com.nitara.BreedingManagement.DeleteInsemination"/>
+            <class name="com.nitara.BreedingManagement.ViewCalving"/>
+      <class name="com.nitara.BreedingManagement.EditPD"/>
+          <class name="com.nitara.BreedingManagement.EditInsemination"/>
+      <class name="com.nitara.BreedingManagement.ViewInsemination"/>
+      <class name="com.nitara.BreedingManagement.EditDryPeriod"/>
+      <class name="com.nitara.BreedingManagement.AddCalving"/>
+      <class name="com.nitara.BreedingManagement.AddDryPeriod"/>
+      <!-- <class name="com.nitara.BreedingManagement.AddPDforCattle"/> -->
+      <class name="com.nitara.BreedingManagement.ViewHeat"/>
+      <class name="com.nitara.BreedingManagement.ViewPD"/>
+      <class name="com.nitara.BreedingManagement.ViewDryPeriod"/>
+      <class name="com.nitara.BreedingManagement.EditHeat"/>
+      <class name="com.nitara.BreedingManagement.AddInsemination"/>
+      <!-- <class name="com.nitara.BreedingManagement.AddHeatForCattle"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

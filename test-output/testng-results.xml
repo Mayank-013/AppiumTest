@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-16T17:19:15 IST" name="Smoke TestSuite" finished-at="2022-12-16T17:20:08 IST" duration-ms="52702">
+    <groups>
+    </groups>
+    <test started-at="2022-12-16T17:19:15 IST" name="Smoke1" finished-at="2022-12-16T17:19:58 IST" duration-ms="42939">
+      <class name="com.nitara.AccountManagement.LoginWithOTP">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.nitara.AccountManagement.LoginWithOTP@5ddeb7cb]" started-at="2022-12-16T17:19:15 IST" name="initialize" finished-at="2022-12-16T17:19:25 IST" duration-ms="9804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://0.0.0.0:5002/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emulator-5556]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pixel5_1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8206]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="LoginwithOTP_ValidData()[pri:0, instance:com.nitara.AccountManagement.LoginWithOTP@5ddeb7cb]" started-at="2022-12-16T17:19:25 IST" name="LoginwithOTP_ValidData" finished-at="2022-12-16T17:19:58 IST" duration-ms="32845" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.id: skip_btn})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: skip_btn})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+at com.nitara.PageObjects.BasePage.click(BasePage.java:89)
+at com.nitara.PageObjects.ChooseLanguagePage.click_skipBtn(ChooseLanguagePage.java:30)
+at com.nitara.AccountManagement.LoginWithOTP.LoginwithOTP_ValidData(LoginWithOTP.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6186c2c6 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 28 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: skip_btn})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BR822IA', ip: '192.168.0.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginwithOTP_ValidData -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.nitara.AccountManagement.LoginWithOTP@5ddeb7cb]" started-at="2022-12-16T17:19:58 IST" name="quit" finished-at="2022-12-16T17:19:58 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.nitara.AccountManagement.LoginWithOTP -->
+    </test> <!-- Smoke1 -->
+    <test started-at="2022-12-16T17:19:15 IST" name="Smoke" finished-at="2022-12-16T17:20:08 IST" duration-ms="52702">
+      <class name="com.nitara.AccountManagement.Login">
+        <test-method is-config="true" signature="initialize(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.nitara.AccountManagement.Login@644baf4a]" started-at="2022-12-16T17:19:15 IST" name="initialize" finished-at="2022-12-16T17:19:26 IST" duration-ms="10362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://0.0.0.0:5003/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pixel5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[8205]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="Login_ValidData()[pri:0, instance:com.nitara.AccountManagement.Login@644baf4a]" started-at="2022-12-16T17:19:26 IST" name="Login_ValidData" finished-at="2022-12-16T17:20:08 IST" duration-ms="42081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_ValidData -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.nitara.AccountManagement.Login@644baf4a]" started-at="2022-12-16T17:20:08 IST" name="quit" finished-at="2022-12-16T17:20:08 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.nitara.AccountManagement.Login -->
+    </test> <!-- Smoke -->
+  </suite> <!-- Smoke TestSuite -->
+</testng-results>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="SystemPort" value="8204"/>
+  <parameter name="Udid" value="emulator-5554"/>
+  <parameter name="DeviceName" value="Pixel5"/>
+  <test thread-count="2" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.nitara.BreedingManagement.ViewPD">
+        <methods>
+          <include name="PD_ViewData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.ViewPD -->
+      <class name="com.nitara.HealthManagement.AddDeworming">
+        <methods>
+          <include name="quit"/>
+          <include name="Deworming_AddData"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.AddDeworming -->
+      <class name="com.nitara.BreedingManagement.ViewInsemination">
+        <methods>
+          <include name="Insemination_ViewData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.ViewInsemination -->
+      <class name="com.nitara.BreedingManagement.ViewCalving">
+        <methods>
+          <include name="Calving_ViewData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.ViewCalving -->
+      <class name="com.nitara.BreedingManagement.DeletePD">
+        <methods>
+          <include name="PD_DeleteData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.DeletePD -->
+      <class name="com.nitara.BreedingManagement.AddInsemination">
+        <methods>
+          <include name="Insemination_ValidData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.AddInsemination -->
+      <class name="com.nitara.HealthManagement.AddVaccination">
+        <methods>
+          <include name="Vaccination_AddData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.AddVaccination -->
+      <class name="com.nitara.BreedingManagement.ViewDryPeriod">
+        <methods>
+          <include name="Dry_ViewData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.ViewDryPeriod -->
+      <class name="com.nitara.BreedingManagement.DeleteHeat">
+        <methods>
+          <include name="quit"/>
+          <include name="Heat_DeleteData"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.DeleteHeat -->
+      <class name="com.nitara.BreedingManagement.AddCalving">
+        <methods>
+          <include name="Calving_AddData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.AddCalving -->
+      <class name="com.nitara.BreedingManagement.EditInsemination">
+        <methods>
+          <include name="quit"/>
+          <include name="Insemination_EditData"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.EditInsemination -->
+      <class name="com.nitara.HealthManagement.EditDeworming">
+        <methods>
+          <include name="Deworming_EditData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.EditDeworming -->
+      <class name="com.nitara.HealthManagement.DeleteDeworming">
+        <methods>
+          <include name="Deworming_DeleteData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.DeleteDeworming -->
+      <class name="com.nitara.BreedingManagement.EditDryPeriod">
+        <methods>
+          <include name="quit"/>
+          <include name="initialize"/>
+          <include name="Dry_EditData"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.EditDryPeriod -->
+      <class name="com.nitara.HealthManagement.DeleteVaccination">
+        <methods>
+          <include name="Vaccination_DeleteData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.DeleteVaccination -->
+      <class name="com.nitara.HealthManagement.ViewTreatment">
+        <methods>
+          <include name="quit"/>
+          <include name="Treatment_ViewData"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.ViewTreatment -->
+      <class name="com.nitara.BreedingManagement.EditPD">
+        <methods>
+          <include name="PD_EditData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.EditPD -->
+      <class name="com.nitara.HealthManagement.ViewVaccination">
+        <methods>
+          <include name="Vaccination_ViewData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.ViewVaccination -->
+      <class name="com.nitara.HealthManagement.EditVaccination">
+        <methods>
+          <include name="Vaccination_EditData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.EditVaccination -->
+      <class name="com.nitara.BreedingManagement.AddDryPeriod">
+        <methods>
+          <include name="AddDryPeriod_ValidData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.AddDryPeriod -->
+      <class name="com.nitara.BreedingManagement.ViewHeat">
+        <methods>
+          <include name="Heat_ViewData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.ViewHeat -->
+      <class name="com.nitara.HealthManagement.ViewDeworming">
+        <methods>
+          <include name="Deworming_ViewData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.ViewDeworming -->
+      <class name="com.nitara.AccountManagement.SignUp">
+        <methods>
+          <include name="SignUp_ValidData"/>
+          <include name="quit"/>
+          <include name="setupAccount"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.AccountManagement.SignUp -->
+      <class name="com.nitara.BreedingManagement.EditHeat">
+        <methods>
+          <include name="quit"/>
+          <include name="Heat_EditData"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.EditHeat -->
+      <class name="com.nitara.HealthManagement.AddTreatment">
+        <methods>
+          <include name="Treatment_AddData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.HealthManagement.AddTreatment -->
+      <class name="com.nitara.BreedingManagement.DeleteInsemination">
+        <methods>
+          <include name="Insemination_DeleteData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.DeleteInsemination -->
+      <class name="com.nitara.BreedingManagement.DeleteDryPeriod">
+        <methods>
+          <include name="Dry_DeleteData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.DeleteDryPeriod -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

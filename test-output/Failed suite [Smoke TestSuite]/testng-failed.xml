@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Smoke TestSuite]]">
+  <test thread-count="5" name="Smoke(failed)(failed)">
+    <classes>
+      <class name="com.nitara.DiseasePredictor.ReportDisease">
+        <methods>
+          <include name="reportDisease"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.DiseasePredictor.ReportDisease -->
+    </classes>
+  </test> <!-- Smoke(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Smoke TestSuite]] -->

@@ -1,0 +1,341 @@
+<html>
+<head>
+<title>TestNG:  Smoke</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 20 08:09:49 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2742 seconds (2742326 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nitara.CattleManagement.EditCattleProfile.CattleProfile_EditData()'><b>CattleProfile_EditData</b><br>Test class: com.nitara.CattleManagement.EditCattleProfile</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: back_text})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getText(&lt;generated&gt;)
+	at com.nitara.PageObjects.CattleProfilePage.assert_CattleProfile(CattleProfilePage.java:31)
+	at com.nitara.CattleManagement.EditCattleProfile.CattleProfile_EditData(EditCattleProfile.java:39)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@18a85d3 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: back_text})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-OB1OE1J&apos;, ip: &apos;192.168.0.121&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25554411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25554411'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.id: back_text})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getText(&lt;generated&gt;)
+	at com.nitara.PageObjects.CattleProfilePage.assert_CattleProfile(CattleProfilePage.java:31)
+	at com.nitara.CattleManagement.EditCattleProfile.CattleProfile_EditData(EditCattleProfile.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@18a85d3 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 32 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: back_text})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-OB1OE1J&apos;, ip: &apos;192.168.0.121&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+</pre></div></td>
+<td>76</td>
+<td>com.nitara.CattleManagement.EditCattleProfile@1d9bc04</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nitara.BreedingManagement.EditPD.PD_ViewData()'><b>PD_ViewData</b><br>Test class: com.nitara.BreedingManagement.EditPD<br>Parameters: {isCattlePregnant=true, testcase=PD_ViewData}</td>
+<td></td>
+<td>84</td>
+<td>com.nitara.BreedingManagement.EditPD@1dc67c2</td></tr>
+<tr>
+<td title='com.nitara.AccountManagement.Login.Login_ValidData()'><b>Login_ValidData</b><br>Test class: com.nitara.AccountManagement.Login</td>
+<td></td>
+<td>17</td>
+<td>com.nitara.AccountManagement.Login@1b794e2</td></tr>
+<tr>
+<td title='com.nitara.CattleManagement.RemoveCattle.CattleProfile_RemoveCattle()'><b>CattleProfile_RemoveCattle</b><br>Test class: com.nitara.CattleManagement.RemoveCattle</td>
+<td></td>
+<td>69</td>
+<td>com.nitara.CattleManagement.RemoveCattle@1a8d91c</td></tr>
+<tr>
+<td title='com.nitara.CattleManagement.RegisterMilkingorDryCattle.RegisterCattle_MilkingorDryCattle()'><b>RegisterCattle_MilkingorDryCattle</b><br>Test class: com.nitara.CattleManagement.RegisterMilkingorDryCattle<br>Parameters: {cattleType=Buffalo, inseminationDate=23 Aug 2020, calf2Gender=Female, inseminationType=Artificial, isCattleDry=false, calfCount=Twins, pregnantSince=2, currentLactation=1, calf1Gender=Male, testcase=RegisterCattle_MilkingorDryCattle, breed=Gojri, lastCalvingDate=25 Jun 2020, dryPeriodDate=27 Oct 2020, isCrossBreed=false , isCattlePregnant=false, bullId=3450, isCattleInseminated=false, semenBrand=Amul}</td>
+<td></td>
+<td>49</td>
+<td>com.nitara.CattleManagement.RegisterMilkingorDryCattle@a2da20</td></tr>
+<tr>
+<td title='com.nitara.HealthManagement.DeleteDeworming.Deworming_DeleteData()'><b>Deworming_DeleteData</b><br>Test class: com.nitara.HealthManagement.DeleteDeworming<br>Parameters: {amount=22, dewormer=Albendazole, testcase=Deworming_DeleteData}</td>
+<td></td>
+<td>95</td>
+<td>com.nitara.HealthManagement.DeleteDeworming@c1c010</td></tr>
+<tr>
+<td title='com.nitara.HealthManagement.DeleteVaccination.Vaccination_DeleteData()'><b>Vaccination_DeleteData</b><br>Test class: com.nitara.HealthManagement.DeleteVaccination<br>Parameters: {dosage=22, vaccine=BQ (Black Quarter), amount=53, testcase=Vaccination_DeleteData}</td>
+<td></td>
+<td>101</td>
+<td>com.nitara.HealthManagement.DeleteVaccination@164985f</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.DeleteHeat.Heat_DeleteData()'><b>Heat_DeleteData</b><br>Test class: com.nitara.BreedingManagement.DeleteHeat<br>Parameters: {heatStartTime=10:30:PM, heatType=Natural, heatDate=20 Sep 2021, testcase=Heat_DeleteData}</td>
+<td></td>
+<td>82</td>
+<td>com.nitara.BreedingManagement.DeleteHeat@9ba3fb</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.EditDryPeriod.Dry_EditData()'><b>Dry_EditData</b><br>Test class: com.nitara.BreedingManagement.EditDryPeriod</td>
+<td></td>
+<td>97</td>
+<td>com.nitara.BreedingManagement.EditDryPeriod@136e4cd</td></tr>
+<tr>
+<td title='com.nitara.WeightManagement.EditWeight.Weight_EditData()'><b>Weight_EditData</b><br>Test class: com.nitara.WeightManagement.EditWeight<br>Parameters: {girth=60, length=80, calculateBy=Girth, testcase=Weight_EditData, dateOfWeight=12 Dec 2021}</td>
+<td></td>
+<td>73</td>
+<td>com.nitara.WeightManagement.EditWeight@1d3b207</td></tr>
+<tr>
+<td title='com.nitara.HealthManagement.EditDeworming.Deworming_EditData()'><b>Deworming_EditData</b><br>Test class: com.nitara.HealthManagement.EditDeworming<br>Parameters: {amount=21, dewormer=Albendazole, testcase=Deworming_EditData}</td>
+<td></td>
+<td>113</td>
+<td>com.nitara.HealthManagement.EditDeworming@17f23d9</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.DeleteDryPeriod.Dry_DeleteData()'><b>Dry_DeleteData</b><br>Test class: com.nitara.BreedingManagement.DeleteDryPeriod</td>
+<td></td>
+<td>92</td>
+<td>com.nitara.BreedingManagement.DeleteDryPeriod@472554</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.AddCalving.Calving_AddData()'><b>Calving_AddData</b><br>Test class: com.nitara.BreedingManagement.AddCalving<br>Parameters: {calvingTime=10:30:PM, calfGender1=Female, calfGender2=Male, calvingDate=20 Aug 2021, calfResult=Twins, testcase=Calving_AddData}</td>
+<td></td>
+<td>74</td>
+<td>com.nitara.BreedingManagement.AddCalving@6be2c3</td></tr>
+<tr>
+<td title='com.nitara.CattleManagement.RegisterHeifer.RegisterCattle_Heifer()'><b>RegisterCattle_Heifer</b><br>Test class: com.nitara.CattleManagement.RegisterHeifer<br>Parameters: {cattleType=Cow, inseminationDate=15 Nov 2021, inseminationType=Artificial, crossedWith=HF, pregnantSince=1, testcase=RegisterCattle_Heifer, monthOfBirth=JANUARY, breed=Hariana, isCrossBreed=true, isCattlePregnant=false, bullId=3456, isCattleInseminated=false, semenBrand=Amul, yearOfBirth=2019}</td>
+<td></td>
+<td>47</td>
+<td>com.nitara.CattleManagement.RegisterHeifer@13b46c3</td></tr>
+<tr>
+<td title='com.nitara.AccountManagement.ForgotPin.ForgotPin_ValidData()'><b>ForgotPin_ValidData</b><br>Test class: com.nitara.AccountManagement.ForgotPin</td>
+<td></td>
+<td>28</td>
+<td>com.nitara.AccountManagement.ForgotPin@1200884</td></tr>
+<tr>
+<td title='com.nitara.DiseasePredictor.ReportDisease.reportDisease()'><b>reportDisease</b><br>Test class: com.nitara.DiseasePredictor.ReportDisease</td>
+<td></td>
+<td>80</td>
+<td>com.nitara.DiseasePredictor.ReportDisease@16be40f</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.ViewCalving.Calving_ViewData()'><b>Calving_ViewData</b><br>Test class: com.nitara.BreedingManagement.ViewCalving<br>Parameters: {calfGender1=Female, calfGender2=Male, testcase=Calving_ViewData, calfResult=Twins}</td>
+<td></td>
+<td>69</td>
+<td>com.nitara.BreedingManagement.ViewCalving@17badd3</td></tr>
+<tr>
+<td title='com.nitara.CattleManagement.RegisterBull.RegisterCattle_Bull()'><b>RegisterCattle_Bull</b><br>Test class: com.nitara.CattleManagement.RegisterBull<br>Parameters: {isCrossBreed=true, cattleType=Cow, weight=200, crossedWith=HF, testcase=RegisterCattle_Bull, monthOfBirth=APRIL, breed=Rathi, yearOfBirth=2018}</td>
+<td></td>
+<td>55</td>
+<td>com.nitara.CattleManagement.RegisterBull@b0b186</td></tr>
+<tr>
+<td title='com.nitara.BCSManagement.EditBcs.EditBcs()'><b>EditBcs</b><br>Test class: com.nitara.BCSManagement.EditBcs</td>
+<td></td>
+<td>100</td>
+<td>com.nitara.BCSManagement.EditBcs@11bdc27</td></tr>
+<tr>
+<td title='com.nitara.AccountManagement.LoginWithOTP.LoginwithOTP_ValidData()'><b>LoginwithOTP_ValidData</b><br>Test class: com.nitara.AccountManagement.LoginWithOTP</td>
+<td></td>
+<td>21</td>
+<td>com.nitara.AccountManagement.LoginWithOTP@1d47554</td></tr>
+<tr>
+<td title='com.nitara.MilkingMangement.RecordCattleMilkingData.Milking_RecordCattleMilking()'><b>Milking_RecordCattleMilking</b><br>Test class: com.nitara.MilkingMangement.RecordCattleMilkingData</td>
+<td></td>
+<td>50</td>
+<td>com.nitara.MilkingMangement.RecordCattleMilkingData@a50da</td></tr>
+<tr>
+<td title='com.nitara.WeightManagement.DeleteWeight.Weight_ViewData()'><b>Weight_ViewData</b><br>Test class: com.nitara.WeightManagement.DeleteWeight<br>Parameters: {girth=60, length=80, calculateBy=Girth, testcase=Weight_ViewData, dateOfWeight=12 Dec 2021}</td>
+<td></td>
+<td>74</td>
+<td>com.nitara.WeightManagement.DeleteWeight@3a5fd2</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.DeletePD.PD_ViewData()'><b>PD_ViewData</b><br>Test class: com.nitara.BreedingManagement.DeletePD<br>Parameters: {isCattlePregnant=true, testcase=PD_ViewData}</td>
+<td></td>
+<td>78</td>
+<td>com.nitara.BreedingManagement.DeletePD@1af3c0</td></tr>
+<tr>
+<td title='com.nitara.HealthManagement.ViewTreatment.Treatment_ViewData()'><b>Treatment_ViewData</b><br>Test class: com.nitara.HealthManagement.ViewTreatment<br>Parameters: {dosage=11, isAntibioticGiven=true, amount=50, disease=FMD, isFollowUpRequired=true, symptomsCount=3, medicine=med2, dateOfVisit=2 Nov 2021, testcase=Treatment_ViewData, followUpAfter=10, symptoms[1]=Coughing, symptoms[0]=Watery Eyes}</td>
+<td></td>
+<td>114</td>
+<td>com.nitara.HealthManagement.ViewTreatment@5b461a</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.DeleteInsemination.Insemination_DeleteData()'><b>Insemination_DeleteData</b><br>Test class: com.nitara.BreedingManagement.DeleteInsemination<br>Parameters: {bullID=2346, inseminationDate=27 Sep 2021, type=Artificial, semenBrand=Amul, testcase=Insemination_DeleteData}</td>
+<td></td>
+<td>66</td>
+<td>com.nitara.BreedingManagement.DeleteInsemination@fdb4a6</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.EditHeat.Heat_EditData()'><b>Heat_EditData</b><br>Test class: com.nitara.BreedingManagement.EditHeat<br>Parameters: {heatStartTime=10:57:AM, heatType=Artificial, heatDate=20 Aug 2021, testcase=Heat_EditData}</td>
+<td></td>
+<td>82</td>
+<td>com.nitara.BreedingManagement.EditHeat@1d20e46</td></tr>
+<tr>
+<td title='com.nitara.BreedingManagement.EditInsemination.Insemination_EditData()'><b>Insemination_EditData</b><br>Test class: com.nitara.BreedingManagement.EditInsemination<br>Parameters: {bullID=2346, inseminationDate=27 Sep 2021, type=Natural, testcase=Insemination_EditData, remarks=Natural Insemination }</td>
+<td></td>
+<td>81</td>
+<td>com.nitara.BreedingManagement.EditInsemination@11274d2</td></tr>
+<tr>
+<td title='com.nitara.BCSManagement.DeleteBcs.DeleteBcs()'><b>DeleteBcs</b><br>Test class: com.nitara.BCSManagement.DeleteBcs</td>
+<td></td>
+<td>83</td>
+<td>com.nitara.BCSManagement.DeleteBcs@18fdd99</td></tr>
+<tr>
+<td title='com.nitara.HealthManagement.EditVaccination.Vaccination_EditData()'><b>Vaccination_EditData</b><br>Test class: com.nitara.HealthManagement.EditVaccination<br>Parameters: {dosage=21, vaccine=FMD (Foot & Mouth Disease), amount=52, testcase=Vaccination_EditData}</td>
+<td></td>
+<td>110</td>
+<td>com.nitara.HealthManagement.EditVaccination@1f2a664</td></tr>
+<tr>
+<td title='com.nitara.AccountManagement.SignUp.SignUp_ValidData()'><b>SignUp_ValidData</b><br>Test class: com.nitara.AccountManagement.SignUp</td>
+<td></td>
+<td>34</td>
+<td>com.nitara.AccountManagement.SignUp@1339552</td></tr>
+<tr>
+<td title='com.nitara.CattleManagement.RegisterCalf.RegisterCattle_Calf()'><b>RegisterCattle_Calf</b><br>Test class: com.nitara.CattleManagement.RegisterCalf<br>Parameters: {isCrossBreed=false , cattleType=Cow, weight=80, testcase=RegisterCattle_Calf, monthOfBirth=APRIL, breed=Rathi, yearOfBirth=2021}</td>
+<td></td>
+<td>54</td>
+<td>com.nitara.CattleManagement.RegisterCalf@1c1a03d</td></tr>
+<tr>
+<td title='com.nitara.MilkingMangement.RecordFarmMilkingData.Milking_RecordCattleMilking()'><b>Milking_RecordCattleMilking</b><br>Test class: com.nitara.MilkingMangement.RecordFarmMilkingData</td>
+<td></td>
+<td>51</td>
+<td>com.nitara.MilkingMangement.RecordFarmMilkingData@2bd765</td></tr>
+</table><p>
+</body>
+</html>

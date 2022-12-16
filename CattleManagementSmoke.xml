@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke TestSuite">
+<parameter name="Udid" value="de319e1e2346" />
+<parameter name="DeviceName" value="DeviceName" />
+<parameter name="SystemPort" value="SystemPort" />
+<test name="Smoke" preserve-order="true">
+  <classes>
+<class name="com.nitara.CattleManagement.RegisterHeifer"/>
+<class name="com.nitara.CattleManagement.RegisterCalf"/>
+<class name="com.nitara.CattleManagement.RegisterBull"/>
+<class name="com.nitara.CattleManagement.RegisterMilkingorDryCattle"/>
+<class name="com.nitara.MilkingMangement.RecordCattleMilkingData"/>
+<class name="com.nitara.MilkingMangement.RecordFarmMilkingData"/>
+<class name="com.nitara.WeightManagement.EditWeight"/>
+<class name="com.nitara.WeightManagement.DeleteWeight"/>
+<class name="com.nitara.CattleManagement.EditCattleProfile"/>
+<class name="com.nitara.DiseasePredictor.ReportDisease"/>
+<class name="com.nitara.CattleManagement.RemoveCattle"/>
+<class name="com.nitara.BCSManagement.EditBcs"/> 
+<class name="com.nitara.BCSManagement.DeleteBcs"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

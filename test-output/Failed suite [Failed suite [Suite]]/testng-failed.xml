@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Suite]]]">
+  <test thread-count="5" name="Test(failed)(failed)(failed)">
+    <classes>
+      <class name="com.nitara.BreedingManagement.EditDryPeriod">
+        <methods>
+          <include name="endSetup"/>
+          <include name="initialize"/>
+          <include name="quit"/>
+          <include name="Dry_ViewData"/>
+          <include name="reportSetup"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.EditDryPeriod -->
+      <class name="com.nitara.CattleManagement.EditCattleProfile">
+        <methods>
+          <include name="endSetup"/>
+          <include name="initialize"/>
+          <include name="quit"/>
+          <include name="CattleProfile_EditData"/>
+          <include name="reportSetup"/>
+        </methods>
+      </class> <!-- com.nitara.CattleManagement.EditCattleProfile -->
+      <class name="com.nitara.CattleManagement.RemoveCattle">
+        <methods>
+          <include name="endSetup"/>
+          <include name="initialize"/>
+          <include name="CattleProfile_EditData"/>
+          <include name="quit"/>
+          <include name="reportSetup"/>
+        </methods>
+      </class> <!-- com.nitara.CattleManagement.RemoveCattle -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Breeding Somoke TestSuite]">
+  <test thread-count="5" name="Breeding(failed)">
+    <classes>
+      <class name="com.nitara.BreedingManagement.DeleteDryPeriod">
+        <methods>
+          <include name="Dry_DeleteData"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.DeleteDryPeriod -->
+      <class name="com.nitara.BreedingManagement.AddCalving">
+        <methods>
+          <include name="Calving_AddData" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.nitara.BreedingManagement.AddCalving -->
+    </classes>
+  </test> <!-- Breeding(failed) -->
+</suite> <!-- Failed suite [Breeding Somoke TestSuite] -->

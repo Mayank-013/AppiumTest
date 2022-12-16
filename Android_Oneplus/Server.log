@@ -1,0 +1,124 @@
+2022-09-27 01:14:58:137 [Appium] Welcome to Appium v1.21.0
+2022-09-27 01:14:58:138 [Appium] Non-default server args:
+2022-09-27 01:14:58:138 [Appium]   port: 13423
+2022-09-27 01:14:58:139 [Appium]   sessionOverride: true
+2022-09-27 01:14:58:139 [Appium]   logFile: D:\Nitara Automation Farmer\AndroidAutomation_Farmer\Android_Oneplus\Server.log
+2022-09-27 01:14:58:168 [Appium] Appium REST http interface listener started on 0.0.0.0:13423
+2022-09-27 01:14:58:674 [HTTP] --> GET /wd/hub/status
+2022-09-27 01:14:58:675 [HTTP] {}
+2022-09-27 01:14:58:678 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2022-09-27 01:14:58:680 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2022-09-27 01:14:58:692 [HTTP] <-- GET /wd/hub/status 200 14 ms - 68
+2022-09-27 01:14:58:693 [HTTP] 
+2022-09-27 01:14:58:701 [HTTP] --> GET /wd/hub/status
+2022-09-27 01:14:58:702 [HTTP] {}
+2022-09-27 01:14:58:703 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2022-09-27 01:14:58:703 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.21.0"}}
+2022-09-27 01:14:58:706 [HTTP] <-- GET /wd/hub/status 200 4 ms - 68
+2022-09-27 01:14:58:706 [HTTP] 
+2022-09-27 01:14:58:719 [HTTP] Request idempotency key: 23bee02e-d165-4fc4-845c-25a640982dff
+2022-09-27 01:14:58:752 [HTTP] --> POST /wd/hub/session
+2022-09-27 01:14:58:753 [HTTP] {"desiredCapabilities":{"app":"D:\\Nitara Automation Farmer\\AndroidAutomation_Farmer\\src\\test\\resources\\apps\\nitara-1.0.0.1999-qa-debug.apk","automationName":"uiautomator2","autoGrantPermissions":"true","platformName":"Android","udid":"de319e1e2346","deviceName":"Oneplus"},"capabilities":{"firstMatch":[{"appium:app":"D:\\Nitara Automation Farmer\\AndroidAutomation_Farmer\\src\\test\\resources\\apps\\nitara-1.0.0.1999-qa-debug.apk","appium:autoGrantPermissions":"true","appium:automationName":"uiautomator2","appium:deviceName":"Oneplus","platformName":"android","appium:udid":"de319e1e2346"}]}}
+2022-09-27 01:14:58:754 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"D:\\Nitara Automation Farmer\\AndroidAutomation_Farmer\\src\\test\\resources\\apps\\nitara-1.0.0.1999-qa-debug.apk","automationName":"uiautomator2","autoGrantPermissions":"true","platformName":"Android","udid":"de319e1e2346","deviceName":"Oneplus"},null,{"firstMatch":[{"appium:app":"D:\\Nitara Automation Farmer\\AndroidAutomation_Farmer\\src\\test\\resources\\apps\\nitara-1.0.0.1999-qa-debug.apk","appium:autoGrantPermissions":"true","appium:automationName":"uiautomator2","appium:deviceName":"Oneplus","platformName":"android","appium:udid":"de319e1e2346"}]}]
+2022-09-27 01:14:58:755 [BaseDriver] Event 'newSessionRequested' logged at 1664241298755 (06:44:58 GMT+0530 (India Standard Time))
+2022-09-27 01:14:59:066 [Appium] Appium v1.21.0 creating new AndroidUiautomator2Driver (v1.65.0) session
+2022-09-27 01:14:59:067 [Appium] There are no active sessions for cleanup
+2022-09-27 01:14:59:069 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2022-09-27 01:14:59:069 [BaseDriver] Creating session with W3C capabilities: {
+2022-09-27 01:14:59:069 [BaseDriver]   "alwaysMatch": {
+2022-09-27 01:14:59:069 [BaseDriver]     "platformName": "android",
+2022-09-27 01:14:59:069 [BaseDriver]     "appium:app": "D:\\Nitara Automation Farmer\\AndroidAutomation_Farmer\\src\\test\\resources\\apps\\nitara-1.0.0.1999-qa-debug.apk",
+2022-09-27 01:14:59:070 [BaseDriver]     "appium:autoGrantPermissions": "true",
+2022-09-27 01:14:59:070 [BaseDriver]     "appium:automationName": "uiautomator2",
+2022-09-27 01:14:59:070 [BaseDriver]     "appium:deviceName": "Oneplus",
+2022-09-27 01:14:59:070 [BaseDriver]     "appium:udid": "de319e1e2346"
+2022-09-27 01:14:59:070 [BaseDriver]   },
+2022-09-27 01:14:59:070 [BaseDriver]   "firstMatch": [
+2022-09-27 01:14:59:070 [BaseDriver]     {}
+2022-09-27 01:14:59:070 [BaseDriver]   ]
+2022-09-27 01:14:59:070 [BaseDriver] }
+2022-09-27 01:14:59:075 [BaseDriver] Capability 'autoGrantPermissions' changed from string to boolean. This may cause unexpected behavior
+2022-09-27 01:14:59:078 [BaseDriver] Session created with session id: 0a5a23e6-71c4-415f-a6f6-ef17db645181
+2022-09-27 01:14:59:081 [BaseDriver] Using local app 'D:\Nitara Automation Farmer\AndroidAutomation_Farmer\src\test\resources\apps\nitara-1.0.0.1999-qa-debug.apk'
+2022-09-27 01:14:59:081 [UiAutomator2] Checking whether app is actually present
+2022-09-27 01:14:59:088 [ADB] Found 1 'build-tools' folders under 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools' (newest first):
+2022-09-27 01:14:59:088 [ADB]     C:/Users/SURABHIKUMAR/Downloads/commandlinetools-win-7302050_latest/cmdline-tools/build-tools/30.0.3
+2022-09-27 01:14:59:089 [ADB] Using 'adb.exe' from 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe'
+2022-09-27 01:14:59:089 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 start-server'
+2022-09-27 01:14:59:112 [AndroidDriver] Retrieving device list
+2022-09-27 01:14:59:113 [ADB] Trying to find a connected android device
+2022-09-27 01:14:59:113 [ADB] Getting connected devices
+2022-09-27 01:14:59:134 [ADB] Connected devices: [{"udid":"de319e1e2346","state":"device"}]
+2022-09-27 01:14:59:134 [AndroidDriver] Using device: de319e1e2346
+2022-09-27 01:14:59:136 [ADB] Using 'adb.exe' from 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe'
+2022-09-27 01:14:59:136 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 start-server'
+2022-09-27 01:14:59:155 [ADB] Setting device id to de319e1e2346
+2022-09-27 01:14:59:156 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell getprop ro.build.version.sdk'
+2022-09-27 01:14:59:252 [ADB] Current device property 'ro.build.version.sdk': 30
+2022-09-27 01:14:59:253 [ADB] Getting device platform version
+2022-09-27 01:14:59:253 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell getprop ro.build.version.release'
+2022-09-27 01:14:59:341 [ADB] Current device property 'ro.build.version.release': 11
+2022-09-27 01:14:59:341 [ADB] Device API level: 30
+2022-09-27 01:14:59:341 [UiAutomator2] Relaxing hidden api policy
+2022-09-27 01:14:59:343 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2022-09-27 01:14:59:650 [AndroidDriver] Parsing package and activity from app manifest
+2022-09-27 01:14:59:695 [ADB] Package name: 'com.nitara.farmer.qa'
+2022-09-27 01:14:59:696 [ADB] Main activity name: 'com.nitara.farmer.MainActivity'
+2022-09-27 01:14:59:696 [AndroidDriver] Parsed package and activity are: com.nitara.farmer.qa/com.nitara.farmer.MainActivity
+2022-09-27 01:14:59:698 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 wait-for-device'
+2022-09-27 01:14:59:744 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell echo ping'
+2022-09-27 01:14:59:852 [AndroidDriver] Pushing settings apk to device...
+2022-09-27 01:14:59:853 [ADB] Getting install status for io.appium.settings
+2022-09-27 01:14:59:853 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell dumpsys package io.appium.settings'
+2022-09-27 01:14:59:975 [ADB] 'io.appium.settings' is installed
+2022-09-27 01:14:59:975 [ADB] Getting package info for 'io.appium.settings'
+2022-09-27 01:14:59:976 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell dumpsys package io.appium.settings'
+2022-09-27 01:15:00:142 [ADB] The version code of the installed 'io.appium.settings' is greater than the application version code (30 > 29)
+2022-09-27 01:15:00:143 [ADB] There is no need to downgrade 'io.appium.settings'
+2022-09-27 01:15:00:143 [ADB] Getting IDs of all 'io.appium.settings' processes
+2022-09-27 01:15:00:144 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell 'pgrep --help; echo $?''
+2022-09-27 01:15:00:244 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2022-09-27 01:15:00:429 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2022-09-27 01:15:00:430 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell appops set io.appium.settings android:mock_location allow'
+2022-09-27 01:15:00:634 [Logcat] Starting logs capture with command: C:\\Users\\SURABHIKUMAR\\Downloads\\commandlinetools-win-7302050_latest\\cmdline-tools\\platform-tools\\adb.exe -P 5037 -s de319e1e2346 logcat -v threadtime
+2022-09-27 01:15:00:771 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 8205
+2022-09-27 01:15:00:771 [ADB] Forwarding system: 8205 to device: 6790
+2022-09-27 01:15:00:772 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 forward tcp:8205 tcp:6790'
+2022-09-27 01:15:00:798 [ADB] Getting install status for io.appium.uiautomator2.server
+2022-09-27 01:15:00:798 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell dumpsys package io.appium.uiautomator2.server'
+2022-09-27 01:15:00:897 [ADB] 'io.appium.uiautomator2.server' is installed
+2022-09-27 01:15:00:897 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2022-09-27 01:15:00:897 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell dumpsys package io.appium.uiautomator2.server'
+2022-09-27 01:15:01:003 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.21.1' >= '4.21.1')
+2022-09-27 01:15:01:004 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2022-09-27 01:15:01:005 [ADB] Checking app cert for C:\Users\SURABHIKUMAR\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.21.1.apk
+2022-09-27 01:15:01:014 [ADB] Using 'apksigner.jar' from 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\build-tools\30.0.3\lib\apksigner.jar'
+2022-09-27 01:15:01:017 [ADB] Starting apksigner: 'C:\\Program Files (x86)\\Java\\jdk1.8.0_291\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\SURABHIKUMAR\\Downloads\\commandlinetools-win-7302050_latest\\cmdline-tools\\build-tools\\30.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\SURABHIKUMAR\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.21.1.apk
+2022-09-27 01:15:01:680 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2022-09-27 01:15:01:680 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2022-09-27 01:15:01:680 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2022-09-27 01:15:01:680 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2022-09-27 01:15:01:681 [ADB] 
+2022-09-27 01:15:01:681 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v4.21.1.apk'
+2022-09-27 01:15:01:681 [ADB] 'C:\Users\SURABHIKUMAR\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.21.1.apk' is signed with the default certificate
+2022-09-27 01:15:01:681 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2022-09-27 01:15:01:681 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell dumpsys package io.appium.uiautomator2.server.test'
+2022-09-27 01:15:01:827 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2022-09-27 01:15:01:827 [ADB] Checking app cert for C:\Users\SURABHIKUMAR\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2022-09-27 01:15:01:827 [ADB] Starting apksigner: 'C:\\Program Files (x86)\\Java\\jdk1.8.0_291\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\SURABHIKUMAR\\Downloads\\commandlinetools-win-7302050_latest\\cmdline-tools\\build-tools\\30.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\SURABHIKUMAR\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2022-09-27 01:15:02:239 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2022-09-27 01:15:02:239 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2022-09-27 01:15:02:240 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2022-09-27 01:15:02:240 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2022-09-27 01:15:02:240 [ADB] 
+2022-09-27 01:15:02:240 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2022-09-27 01:15:02:240 [ADB] 'C:\Users\SURABHIKUMAR\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2022-09-27 01:15:02:240 [UiAutomator2] Server packages are not going to be (re)installed
+2022-09-27 01:15:02:243 [UiAutomator2] Waiting up to 30000ms for services to be available
+2022-09-27 01:15:02:243 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell pm list instrumentation'
+2022-09-27 01:15:02:362 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2022-09-27 01:15:02:368 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2022-09-27 01:15:02:369 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2022-09-27 01:15:02:370 [ADB] Running 'C:\Users\SURABHIKUMAR\Downloads\commandlinetools-win-7302050_latest\cmdline-tools\platform-tools\adb.exe -P 5037 -s de319e1e2346 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2022-09-27 01:15:02:604 [ADB] Checking app cert for D:\Nitara Automation Farmer\AndroidAutomation_Farmer\src\test\resources\apps\nitara-1.0.0.1999-qa-debug.apk
+2022-09-27 01:15:02:606 [ADB] Starting apksigner: 'C:\\Program Files (x86)\\Java\\jdk1.8.0_291\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\SURABHIKUMAR\\Downloads\\commandlinetools-win-7302050_latest\\cmdline-tools\\build-tools\\30.0.3\\lib\\apksigner.jar verify --print-certs 'D:\\Nitara Automation Farmer\\AndroidAutomation_Farmer\\src\\test\\resources\\apps\\nitara-1.0.0.1999-qa-debug.apk'

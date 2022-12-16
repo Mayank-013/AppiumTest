@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Smoke TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Smoke1(failed)">
+    <parameter name="SystemPort" value="8206"/>
+    <parameter name="Udid" value="emulator-5556"/>
+    <parameter name="URL" value="http://0.0.0.0:5002/wd/hub"/>
+    <parameter name="DeviceName" value="Pixel5_1"/>
+    <classes>
+      <class name="com.nitara.AccountManagement.LoginWithOTP">
+        <methods>
+          <include name="quit"/>
+          <include name="initialize"/>
+          <include name="LoginwithOTP_ValidData"/>
+        </methods>
+      </class> <!-- com.nitara.AccountManagement.LoginWithOTP -->
+    </classes>
+  </test> <!-- Smoke1(failed) -->
+</suite> <!-- Failed suite [Smoke TestSuite] -->
